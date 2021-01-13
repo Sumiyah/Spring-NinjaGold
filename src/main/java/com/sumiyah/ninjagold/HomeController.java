@@ -41,6 +41,7 @@ public class HomeController {
 			RedirectAttributes rAttributes) {
 		
 		Integer gold = (Integer) session.getAttribute("gold");
+		@SuppressWarnings("unchecked")
 		ArrayList<String> activities = (ArrayList<String>) session.getAttribute("activity");
        
 		if(find.equals("farm")) {
